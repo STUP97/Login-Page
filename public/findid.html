@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>JH University</title>
+    <link rel="stylesheet" type = "text/css" href="/style.css">
+    <script src = "https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src = "https://code.jquery.com/jquery-migrate-3.3.2.js"></script>
+</head>
+<p1>
+    <h1 style = 'font-size: 35px;'>
+        학부생 ID 찾기
+    </h1>
+    <h2 style = 'position : absolute;left :0px;top : 50px;'>
+        Find Identification
+    </h2>
+</p1>
+<h1>
+    <div class="like-content" style = 'position : absolute;left :0px;top : 95px;}'>
+        <body>
+            <form action = "http://localhost:9999/findid/" method = "POST" >
+                <div id="signup_header" >
+                    <h2>
+                        Find Identification
+                    </h2>
+                    <div id="input_data">
+                        이름
+                        <input type = "text" name = "user_name"/>
+                    </div>
+                    <div id="input_data">
+                        전화번호
+                        <input type = "text" name = "phone_number"/>
+                    </div>
+                    <div id="input_data">
+                생년월일
+                <select name = "year" size = "1">
+                    <script>
+                        for(let i=2020; i>1900; i--){
+                            document.write("<option value = "+i+">"+ i +"</option>");
+                        }
+                    </script>
+                </select>년
+                <select name = "month" size = "1">
+                    <script>
+                        for(let i=1; i<13; i++){
+                            if(i < 10){
+                                document.write("<option value = 0" + i + ">0" + i +"</option>");
+                            }
+                            else{
+                                document.write("<option value = "+i+">"+ i +"</option>");
+                            }
+                        }
+                    </script>
+                </select>월
+                <select name = "day" size = "1">
+                    <script>
+                        for(let i=1; i<32; i++){
+                            if(i < 10){
+                                document.write("<option value = 0" + i + ">0" + i +"</option>");
+                            }
+                            else{
+                                document.write("<option value = "+i+">"+ i +"</option>");
+                            }
+                        }
+                    </script>
+                </select>일
+                    </div>
+                    <div>
+                        <input type="submit" id = "signup_btn1" class="btn-secondary like-review" value = "Find"/>
+                        <input type="button" id = "signup_btn2" class="btn-secondary like-review" value = "Go Back" onclick="location.href='/'"/>
+                    </div>
+                </div>
+            </form>
+
+        </body>
+        <div class="like-content">
+        </div>
+    </div>
+</h1>
+</html>

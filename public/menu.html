@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>JH University</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src = "https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src = "https://code.jquery.com/jquery-migrate-3.3.2.js"></script>
+    <script>
+        let oReq = new XMLHttpRequest();
+        oReq.open('POST', "http://localhost:9999/menu");
+        oReq.send();
+        oReq.addEventListener('load', function(){
+            let result = JSON.parse(oReq.responseText);
+            document.querySelector('.result').innerHTML += result[1] + "님 (";
+            document.querySelector('.result').innerHTML += result[0] + ")";    
+        })
+    </script>
+</head>
+<p1>
+    <h1 style = 'font-size: 35px;'>
+        학부생 수강신청
+    </h1>
+    <h2 style = 'position : absolute;left :0px;top : 50px;'>
+        Course registration system
+    </h2>
+    <b><div class = "result" style = 'position : absolute;left :450px;top : 25px;}'></div></b>
+</p1>
+<h1>
+<div class="like-content" style = 'position : absolute;left :0px;top : 95px;}'>
+        <input type = "button" id = 'menu_btn1' class="btn-secondary like-review" value = "Logout" onclick="location.href='/'"/>
+<body>
+    <div id="find_header">
+        <input type = "button" id = 'menu_btn2' class="btn-secondary like-review" value = "수강신청" style = "height: 150px; width: 150px;" onclick = "location.href='/sugang/'"/>
+        <input type = "button" id = 'menu_btn3' class="btn-secondary like-review" value = "출력" style = "height: 150px; width: 150px;" onclick = "location.href='/print/'"/>
+        
+    </div>
+</body>
+    <div class="like-content" >
+    </div>
+</div>
+</h1>
+
+</html>

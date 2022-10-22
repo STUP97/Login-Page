@@ -1,0 +1,186 @@
+.like-content {
+    display: inline-block;
+    width: 100%;
+    margin: 40px 0 0;
+    padding: 40px 0 0;
+    font-size: 18px;
+    border-top: 9px dashed rgb(255, 255, 255);
+    text-align: center;
+}
+.like-content .btn-secondary {
+    display: block;
+    margin: 40px auto 0px;
+    text-align: center;
+    background: rgb(175, 163, 243);
+    border-radius: 3px;
+    box-shadow: 0 10px 20px -8px rgb(183, 127, 216);
+    padding: 5px 17px;
+    font-size: 15px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    text-decoration: none;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+.like-content .btn-secondary:hover {
+    transform: translateY(-3px);
+}
+.like-content .btn-secondary .fa {
+    margin-right: 5px;
+}
+.animate-like {
+  animation-name: likeAnimation;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-duration: 0.65s;
+}
+@keyframes likeAnimation {
+  0%   { transform: scale(30); }
+  100% { transform: scale(1); }
+}
+
+
+body {
+    background-image:url(graduation-cap-with-gold-tassle.jpg);
+    background-size: 2700px 2000px;
+    background-repeat : no-repeat;
+    width:600px;
+    position : absolute;
+    left : 400px;
+    top : 250px;
+}
+#login_header{
+    background-color: rgba( 255, 255, 255, 0.5 );
+    box-shadow: 0 10px 20px -8px rgb(183, 127, 216);
+    text-align:center;
+    float:left;
+    width:400px;
+    height:150px;
+    margin:4px;
+    padding:4px;
+}
+#signup_header{
+    background-color: rgba( 255, 255, 255, 0.5 );
+    box-shadow: 0 10px 20px -8px rgb(183, 127, 216);
+    text-align:center;
+    float:left;
+    width:400px;
+    height:250px;
+    margin:4px;
+    padding:4px;
+}
+#find_header{
+    background-color: rgba( 255, 255, 255, 0.5 );
+    box-shadow: 0 10px 20px -8px rgb(183, 127, 216);
+    text-align:center;
+    float:left;
+    width:400px;
+    height:250px;
+    margin:4px;
+    padding:4px;
+}
+#findpw_header{
+    background-color: rgba( 255, 255, 255, 0.5 );
+    box-shadow: 0 10px 20px -8px rgb(183, 127, 216);
+    text-align:center;
+    float:left;
+    width:400px;
+    height:300px;
+    margin:4px;
+    padding:4px;
+}
+#input_data{
+    text-align:right;
+    width:280px;
+    height:30px;
+}
+#side {
+    float:left;
+    width:120px;
+    height:150px;
+    position : absolute;
+    left : 300px;
+    top : 25px;
+}
+#login {
+    position : absolute;
+    left :0px;
+    top : 17px;
+}
+#login_btn1 {
+    position : absolute;
+    left :60px;
+    top : 110px;
+}
+#login_btn2 {
+    position : absolute;
+    left :160px;
+    top : 110px;
+}
+#signup_btn1 {
+    position : absolute;
+    left :90px;
+    top : 205px;
+}
+#signup_btn2 {
+    position : absolute;
+    left :195px;
+    top : 205px;
+}
+#find_btn1 {
+    position : absolute;
+    left :30px;
+    top : 20px;
+}
+#find_btn2 {
+    position : absolute;
+    left :240px;
+    top : 20px;
+}
+#find_btn3 {
+    position : absolute;
+    left :163px;
+    top : 199px;
+}
+#findpw_btn1 {
+    position : absolute;
+    left :90px;
+    top : 225px;
+}
+#findpw_btn2 {
+    position : absolute;
+    left :195px;
+    top : 225px;
+}
+#menu_btn1 {
+    position : absolute;
+    left :320px;
+    top : 15px;
+}
+#menu_btn2 {
+    position : absolute;
+    left :30px;
+    top : 80px;
+}
+#menu_btn3 {
+    position : absolute;
+    left :240px;
+    top : 80px;
+}
+#sugang_btn1 {
+    position : absolute;
+    left :90px;
+    top : 215px;
+}
+#sugang_btn2 {
+    position : absolute;
+    left :195px;
+    top : 215px;
+}
+#print_btn {
+    position : absolute;
+    left :620px;
+    top : 0px;
+}
